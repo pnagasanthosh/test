@@ -27,12 +27,12 @@ matlab_sess.run('path/to/folders/')
 
 ### Push values to matlab from python
 ```
-matlab_sess.putvalue('*variable_as_in_matlab*',python_variables)
+matlab_sess.putvalue('V1',p_mat_image)
 ```
 
 ### Running functions
 ```
-matlab_sess.run('name_of_the_.m_file(matlab_variable1,matlab_variable2)')
+matlab_sess.run('c_p=shape_context_warp_func(V1,V2)')
 ```
 
 ### Fetching values from Matlab
