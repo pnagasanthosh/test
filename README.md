@@ -7,35 +7,35 @@ Install pymatlab
 pip install pymatlab
 ```
 
-##Using pyMatlab
+## Using pyMatlab
 
-###Importing
+### Importing
 ```
 import pymatlab
 ```
 
-###Intializing engine
+### Intializing engine
 ```
 matlab_sess = pymatlab.session_factory(options = '-nodesktop -nosplash')
 ```
 
-###Run Matlab commands as from python in this engine
+### Run Matlab commands as from python in this engine
 Change path
 ```
 matlab_sess.run('path/to/folders/')
 ```
 
-###Push values to matlab from python
+### Push values to matlab from python
 ```
 matlab_sess.putvalue('*variable_as_in_matlab*',python_variables)
 ```
 
-###Running functions
+### Running functions
 ```
 matlab_sess.run('name_of_the_.m_file(matlab_variable1,matlab_variable2)')
 ```
 
-###Fetching values from Matlab
+### Fetching values from Matlab
 ```
 tps_control_points = matlab_sess.getvalue('c_p')
 ```
